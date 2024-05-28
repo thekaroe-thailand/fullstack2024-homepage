@@ -151,6 +151,13 @@ function Index() {
                     text: 'ระบบได้บันทึกข้อมูลของคุณแล้ว',
                     icon: 'success'
                 })
+
+                document.getElementById('modalCart_btnClose').click();
+                setCustomerName('');
+                setCustomerPhone('');
+                setCustomerAddress('');
+                setPayDate(new Date());
+                setPayTime('');
             }
         } catch (e) {
             Swal.fire({
